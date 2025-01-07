@@ -41,6 +41,10 @@ genfscon sysfs /module/scsc_bt/parameters/bluetooth_address                     
 genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                                                                u:object_r:sysfs_mem_boost_writable:s0
 genfscon sysfs /kernel/mm/vmscan/am_app_launch								       u:object_r:sysfs_mem_boost_writable:s0
 
+# KProfiles
+genfscon sysfs /module/kprofiles/parameters/auto_kprofiles u:object_r:sysfs_kprofiles:s0
+genfscon sysfs /module/kprofiles/parameters/kp_mode u:object_r:sysfs_kprofiles:s0
+
 # mDnie
 genfscon sysfs /devices/platform/panel/panel_drv/lcd/panel/mdnie/					       u:object_r:sysfs_mdnie_writable:s0
 genfscon sysfs /devices/platform/panel/panel_drv/lcd/panel/mask_brightness				       u:object_r:sysfs_touchscreen_writable:s0

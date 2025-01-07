@@ -307,6 +307,13 @@ on post-fs
 #    chmod 0660 /dev/mst_ctrl
 
 on boot
+
+# KProfiles
+    chown system system /sys/module/kprofiles/parameters/auto_kprofiles
+    chmod 0660 /sys/modules/kprofiles/parameters/auto_kprofiles
+    chown system system /sys/module/kprofiles/parameters/kp_mode
+    chown 0600 /sys/module/kprofiles/parameters/kp_mode
+
 # Performance
     chown root root /sys/class/input_booster/touch/level
     chmod 0644 /sys/class/input_booster/touch/level

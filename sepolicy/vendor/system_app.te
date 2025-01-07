@@ -9,3 +9,5 @@ allow system_app proc_vmallocinfo:file r_file_perms;
 # UDFPS
 get_prop(system_app, vendor_udfps_prop)
 set_prop(system_app, vendor_udfps_prop)
+
+allow system_app sysfs_kprofiles:file rw_file_perms;
